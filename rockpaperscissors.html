@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors Game</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        alert("Let's play Rock Paper Scissors! \n(Play up to 10 rounds.)" );
+
+        //Initialise Values
+        var play = true;
+        var userWins = 0;
+        var userLosses = 0;
+        var draws = 0;
+        var maxRounds = 10;
+
+        //Begin the for loop:
+        for (var roundsPlayed = 1; play; roundsPlayed++) {
+
+            //Set answers:
+            alert("This is round " + (roundsPlayed) + " of " + maxRounds);
+            var userAnswer = prompt("Please choose r (rock), p (paper) or s (scissors)");
+            userAnswer = userAnswer.toLowerCase();
+            var computerChoices = ["r", "p", "s"];
+            var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+            alert("You picked " +
+                userAnswer
+                + " and Computer picked " +
+                computerGuess);
+
+            //Compare Answers:
+            // All winning conditions:
+            if
+                (
+                (userAnswer === 'r' && computerGuess === 's') ||
+                (userAnswer === 's' && computerGuess === 'p') ||
+                (userAnswer === 'p' && computerGuess === 'r')
+            ) {
+                alert("You win!");
+                userWins++;
+            }
+            // All losing conditions:
+            else if (
+                (userAnswer === 'r' && computerGuess === 'p') ||
+                (userAnswer === 's' && computerGuess === 'r') ||
+                (userAnswer === 'p' && computerGuess === 's')
+            ) {
+                alert("You lose!");
+                userLosses++;
+            }
+            else if (userAnswer === computerGuess) {
+                alert("It's a draw!")
+                draws++;
+            }
+            //User picked an invalid value
+            else if (userAnswer != 'r' || userAnswer != 'p' || userAnswer != 's') 
+            {
+                alert("Invalid selection. Please try again.");
+                roundsPlayed--; //Don't count the round
+            }
+
+            alert("Your Wins = " + userWins + " Losses = " + userLosses + " Draws = " + draws);
+
+            //Check total rounds played
+            if (roundsPlayed == maxRounds) {
+                play = false;
+            }
+            else play = confirm("Do you want to play again?");
+        }
+
+        alert("Final results: \nYour Wins = " + userWins + " Losses = " + userLosses + " Draws = " + draws);
+        alert("Thank you for playing!");
+        window.close();
+
+    </script>
+</body>
+
+</html>

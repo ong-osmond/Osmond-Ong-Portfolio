@@ -1,0 +1,84 @@
+<!-- Contact Me Page. Warning: SUBMIT does not SUBMIT anything... yet! Watch this space. -->
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osmond Ong - Contact</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        form {
+            margin: 10px;
+        }
+
+        nav-link {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column">
+    <!-- Navbar; collapses on smaller screens -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+        <a href="index.html">
+            <h1 class="navbar-brand" style="font-size: 30px;">Osmond Ong</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link active" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Main Contact Me Section -->
+    <div class="wrapper" style="margin-top:80px; margin-left: 10px; margin-bottom: 80px;">
+        <form>
+            <h1>Contact</h1>
+            <div>
+                <label for="name">Name </label>
+                <input class="form-control" type="text" placeholder="John Smith">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email </label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="example@email.com">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" alt="button" title="Submit">Submit</button>
+        </form>
+    </div>
+    <!-- End of Main Contact Me Section -->
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-100 fixed-bottom">
+        <div class="container text-center">
+            <small style="color: white">Copyright &copy; 2020 Osmond Ong</small>
+        </div>
+    </footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+</html>
