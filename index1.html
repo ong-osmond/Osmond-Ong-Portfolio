@@ -1,0 +1,122 @@
+<!-- Main Page; About me -->
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osmond Ong - About Me</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @media screen and (max-width: 980px) {
+            iframe {
+                width: 240px;
+                height: 137px;
+            }
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column">
+    <!-- Navbar; collapses on smaller screens -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+        <a href="index.html">
+            <h1 class="navbar-brand" style="font-size: 30px;">Osmond Ong</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link active" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Main About Me Section -->
+    <div class="container" style="margin-top:80px; margin-left: 10px; margin-bottom: 80px">
+        <!-- Main Row Content -->
+        <div class="row">
+            <!-- Main Row Column 1 -->
+            <div class="col-md-7">
+                <h1>About Me</h1>
+                <!-- Sub-row 1 contains My Profile Picture and Welcome to My Website Paragraph -->
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEK8QufAUGOPA/profile-displayphoto-shrink_200_200/0?e=1595462400&v=beta&t=njlLRMoWlTR-Vt58QlIaxbcyOgMFXY6oGb2wGFQQXHY"
+                            class="img-thumbnail" alt="Osmond's Profile Pic" title="Osmond's Profile Pic">
+                    </div>
+                    <div class="col-md-9">
+                        <p>Welcome to my website!
+                            <br> My name is Osmond Ong. I'm based in Perth, Western Australia.
+                            <br> I'm taking up the University of Western Australia (UWA) Full Stack Developer Bootcamp.
+                            <br> This is my Homework for Week 2 of the course.
+                            <br> Connect with me through <a href="https://www.linkedin.com/in/osmond-ong-955b0913/"
+                                target="_blank">LinkedIn</a>
+                            or <a href="https://www.facebook.com/osmond.ong" target="_blank">Facebook</a>.
+                        </p>
+                    </div>
+                    <!-- Sub-row 2 contains Facebook and Twitter Buttons -->
+                    <div class="row" style="margin-top:10px; margin-left: 10px;">
+                        <div id="fb-root" style="margin: 4px;"></div>
+                        <script async defer crossorigin="anonymous"
+                            src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0"></script>
+                        <div class="fb-share-button" data-href="https://ong-osmond.github.io/Homework2/"
+                            data-layout="button_count" data-size="small">
+                            <a target="_blank"
+                                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fong-osmond.github.io%2FHomework2%2F&amp;src=sdkpreparse"
+                                class="fb-xfbml-parse-ignore">Share</a></div>
+                        <div style="margin: 4px;">
+                            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+                                data-text="I found this awesome website! Check it out at https://ong-osmond.github.io/Homework2/"
+                                data-show-count="false">Tweet</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Main Row Column 2 -->
+            <div class="col-md-5">
+                <div class="card mt-2 w-100">
+                    <div class="card-body">
+                        <iframe src="https://www.youtube.com/embed/GXjJ9JwFPjw" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen alt="Osmond's YouTube Channel" title="Osmond's YouTube Channel"></iframe>
+                        <a href="https://www.youtube.com/channel/UCN_dsTVbthm0B8F7ZqsKndg" target="_blank">
+                            <h5 class="card-title">Osmond's YouTube Channel</h5>
+                        </a>
+                        <p class="card-text">Follow me on my YouTube channel! A collection of videos about people and
+                            events.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Main About Me Section -->
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-100 fixed-bottom">
+        <div class="container text-center">
+            <small style="color: white">Copyright &copy; 2020 Osmond Ong</small>
+        </div>
+    </footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+</html>
