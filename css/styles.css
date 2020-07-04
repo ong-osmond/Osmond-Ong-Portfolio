@@ -6010,7 +6010,7 @@ a.close.disabled {
 }
 
 a:visited {
-  color:white;
+  color: #c6c8ca;
 }
 
 @-webkit-keyframes spinner-border {
