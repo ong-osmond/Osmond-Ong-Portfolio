@@ -1,18 +1,13 @@
-# Homework2
-CSS and Bootstrap Homework: Responsive Portfolio
+# Osmond's Portfolio
+Welcome to my updated Portfolio page.
+This is the URL to the page: https://github.com/ong-osmond/Osmond-Ong-Portfolio
 
-Welcome to Homework2 where I start to develop my website.
-
-### The website contains three (3) sections:
-1. About Me (Home / Index)
+### Features a mobile-first responsive webpage with the following information about me:
+1. Contact Information
 2. Portfolio
-3. Contact
-
-### Features:
-1. Bootstrap is used for styling and page behaviours. 
-2. A Navbar with branding is fixed at the top of the page. The Navbar collapses if the screen size is small.
-3. Content is responsive. (The name="viewport" in the meta tag enables this feature.)
-4. There are links to external pages and social media. 
-5. A Footer is fixed to the bottom of the page.
+3. Experience
+4. Education
+5. Skills
+6. Awards
 
 
